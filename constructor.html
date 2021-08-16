@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/newProect/newCSS.css">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+       header{
+            /* background-image: url('https://catherineasquithgallery.com/uploads/posts/2021-02/1614411790_1-p-temnii-fon-dlya-ekrana-kompyutera-2.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover; */
+            max-width: 100%;
+            height: 120px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 50px;
+       }
+       nav{
+        width: 80%;
+        height: 100%;
+        /* background-color: blanchedalmond; */
+        padding: 0 20px;
+       }
+       .img{
+           max-width: 70px;
+           transition-property: transform;
+           transition-duration: 1s;
+       }
+       
+       ul{
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 50px;
+            font-size: 20px;
+            text-transform: uppercase;
+            color: rgb(255, 102, 0);
+       }
+       li{
+        cursor: pointer;
+        transition: .5s;
+       }
+
+       @media (max-width:650px) {
+           header{
+               height: 250px;
+           }
+           nav{
+               margin-top: 15px;
+               height: 100%;
+               max-width: max-content;
+                padding: 0;
+           }
+           ul{
+               margin: 0;
+               width: 100%;
+               height: 100%;
+               display: inline-block;
+               padding: 0;
+           }
+           li{
+            padding-bottom: 25px;
+           }
+            .show{
+            display: none;
+            }
+            
+       }
+       li:hover{
+           box-shadow: -5px 5px 15px 2px rgb(0, 0, 0);
+           transform: translateX(10px);
+       }
+
+
+
+
+       input{
+           outline: none;
+           background-color: rgb(104, 101, 81);
+           color: rgb(255, 248, 248);
+           border-radius: 10%;
+           height: 20px;
+           box-shadow:-5px 5px 15px 2px rgb(0, 0, 0);
+       }
+       form{
+           height: 50px;
+           max-width: max-content;
+           position: absolute;
+           right: 10px;
+           top: 10px;
+       }
+       span{
+           color: ivory;
+       }
+       @media (max-width:600px) {
+        header{
+            padding: 1%;
+        }   
+        form{
+                width: 130px;
+                position: absolute;
+                left: 10px;
+            }
+        input{
+            width: 70px;
+            font-size: 10px;
+        }
+       }
+       @media (max-width:600px) {
+        li{
+            font-size: 15px;
+        }
+        li:hover{
+            box-shadow: -1px 1px 1px 2px rgb(0, 0, 0);
+        }
+       }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <a href=""><img class="img" src="/newProect/free-icon-home-black-shape-37489.png" alt=""></a>
+            <nav>
+                <ul>
+                    <li>one</li>
+                    <li>two</li>
+                    <li>three</li>
+                    <li>four</li>
+                    <li>five</li>
+                </ul>
+            </nav>
+        </header>
+        <form id="form">
+            <span>Вход</span>  <br>
+            <input type="text" name="name" placeholder="name">
+            <input type="text" name="pasword" placeholder="pasword">
+            <input type="submit">
+        </form>
+        <section>
+            <div class="box">
+                <h1>Welcome</h1>
+                <em>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, minima suscipit ut eveniet repellendus necessitatibus officia! In, libero! Odit veritatis similique eius at quos sint ipsa voluptates inventore, dolorum sunt!</em> <br>
+                <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus nemo nihil sint, optio, labore dolore numquam laboriosam aliquid pariatur, recusandae iure dicta unde perferendis? Quod, mollitia dignissimos? Consequatur inventore magni quos nobis porro odit ullam? Perferendis earum optio sapiente excepturi? Totam saepe inventore sunt eos pariatur ex aspernatur aut reiciendis?</span>
+            </div>
+            <div class="sidebar">
+                <h2><em>Регистрация</em></h2>
+                <form id="formTwo">
+                    <span></span>
+                    <input type="text" name="name" id="text" placeholder="@mail">
+                    <input type="text" name="name" id="text" placeholder="name">
+                    <input type="text" name="name" id="text" placeholder="growth">
+                    <input type="text" name="name" id="text" placeholder="weight">
+                    <input type="submit" class="btn">
+                </form>
+            </div>
+        </section>
+    </main>
+   <div class="wrapper">
+    <div class="foto__item">
+        <div class="item">
+            <img class="imgMy" src="https://million-wallpapers.ru/wallpapers/2/91/449542803072437/temno-krasnyj-gibiskus.jpg" alt=""
+            
+        ></div>
+        <div class="item"><img class="imgMy" src="https://phonoteka.org/uploads/posts/2021-04/1618398588_15-phonoteka_org-p-cherno-krasnii-fon-16.jpg" alt=""></div>
+        <div class="item"><img class="imgMy" src="https://www.pixelstalk.net/wp-content/uploads/2016/06/Black-And-Red-Wallpaper-HD-Download.jpg" alt=""></div>
+        <div class="item"><img class="imgMy" src="https://phonoteka.org/uploads/posts/2021-04/1618398632_45-phonoteka_org-p-cherno-krasnii-fon-49.jpg" alt=""></div>
+        <div class="item"><img class="imgMy" src="https://phonoteka.org/uploads/posts/2021-04/1618866890_3-phonoteka_org-p-cherno-krasnii-fon-dlya-rabochego-stola-3.jpg" alt=""></div>
+        <div class="item"><img class="imgMy" src="https://i.pinimg.com/originals/93/15/46/931546499d2ebc7401231a8d5e61692e.jpg" alt=""></div>
+    </div>
+    <div class="square">
+        <div class="square__box">
+            <div class="sqBox top"> <img id="square" src="https://yobte.ru/uploads/posts/2019-11/devushki-v-krasnom-plate-155-foto-98.jpg" alt=""></div>
+            <div class="sqBox left"> <img id="square" src="https://i.pinimg.com/originals/c6/dd/c4/c6ddc44f3a9e3e04a237e6d3970e377a.jpg" alt=""></div>
+            <div class="sqBox right"> <img id="square" src="https://img-fotki.yandex.ru/get/25407/137309491.5/0_19a009_124f4779_XXL.jpg" alt=""></div>
+            <div class="sqBox bottom"> <img id="square" src="https://mykaleidoscope.ru/uploads/posts/2021-03/1615848275_53-p-foto-seksualnikh-devushek-v-krasnom-plate-61.jpg" alt=""></div>
+            <div class="sqBox front"> <img id="square" src="https://get.wallhere.com/photo/women-blonde-portrait-necklace-river-bridge-long-hair-women-outdoors-red-dress-1400527.jpg" alt=""></div>
+            <div class="sqBox back"> <img id="square" src="https://yobte.ru/uploads/posts/2019-11/devushki-v-krasnom-plate-155-foto-113.jpg" alt=""></div>
+        </div>
+    </div>
+    <div class="section__time">
+        <div class="item__time">
+            <img width="100px" src="https://image.flaticon.com/icons/png/128/3983/3983847.png" alt="nam">
+            <h3>Comminity</h3><br>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi aliquid ipsam asperiores repudiandae voluptate vero tempore quo molestiae mollitia reiciendis ipsum numquam sit soluta harum, natus quisquam ut facilis nobis.</span>
+        </div>
+        <div class="item__time">
+            <img width="100px" src="https://image.flaticon.com/icons/png/128/3983/3983858.png" alt="nam">
+            <h3>Comminity</h3><br>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi aliquid ipsam asperiores repudiandae voluptate vero tempore quo molestiae mollitia reiciendis ipsum numquam sit soluta harum, natus quisquam ut facilis nobis.</span>
+        </div>
+        <div class="item__time">
+            <img width="100px" src="https://image.flaticon.com/icons/png/128/3983/3983832.png" alt="nam">
+            <h3>Comminity</h3><br>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi aliquid ipsam asperiores repudiandae voluptate vero tempore quo molestiae mollitia reiciendis ipsum numquam sit soluta harum, natus quisquam ut facilis nobis.</span>
+        </div>
+        <div class="item__time time4">
+            <div class="copy copy__one">
+                <h4>Time</h4>
+                <span>Lorem ipsum dolor sit amet.</span>
+            </div>
+            <div class="copy copy__two">
+                <h4>10pm - 12pm</h4>
+                <span>Lorem ipsum dolor sit amet.</span>
+                <img width="20px" src="https://t4.ftcdn.net/jpg/03/22/32/37/240_F_322323723_HJb8d1u2NuI8dMAjvC62TXbSqn63vpI3.jpg" alt="">
+            </div>
+            <div class="copy">
+                <h4>01pm - 03pm</h4>
+                <span>Lorem ipsum dolor sit amet.</span>
+                <img width="20px" src="https://t4.ftcdn.net/jpg/03/22/32/37/240_F_322323723_HJb8d1u2NuI8dMAjvC62TXbSqn63vpI3.jpg" alt="">
+            </div>
+            <div class="copy copy__three">
+                <h4>04pm - 06pm</h4>
+                <span>Lorem ipsum dolor sit amet.</span>
+                <img width="20px" src="https://t4.ftcdn.net/jpg/03/22/32/37/240_F_322323723_HJb8d1u2NuI8dMAjvC62TXbSqn63vpI3.jpg" alt="">
+            </div>
+        </div>
+    </div>
+   </div>
+   <div class="sidebar__new">
+       <strong>Карточка</strong>
+       <!-- <div class="new__s">
+            <p>@mail: <em></em></p>
+            <p>name:</p>
+            <p>рост:</p>
+            <p>вес:</p>
+            <img id="x" width="20px" src="https://t4.ftcdn.net/jpg/01/70/28/23/240_F_170282328_31qaGRFFKAuAWgWpJsqFtO8UpstN2Bhw.jpg" alt="">
+       </div> -->
+   </div>
+   <footer>
+       <div class="box__footer">
+            <div class="footer__item showFooter"><img src="https://mocah.org/uploads/posts/4568561-women-model-redhead-red-dress-red-lipstick-brown-eyes-depth-of-field.jpg" alt=""></div>
+            <div class="footer__item"><img src="https://mocah.org/uploads/posts/4540089-women-model-redhead-long-hair-women-outdoors-looking-at-viewer-open-mouth-blue-eyes-georgy-chernyadyev-hair-in-face-wavy-hair-red-lipstick-street-building-urban-white-clothing-windy-lace-see-thr.jpg" alt=""></div>
+            <div class="footer__item"><img src="https://catherineasquithgallery.com/uploads/posts/2021-02/1612908629_64-p-zhenshchina-na-krasnom-fone-108.jpg" alt=""></div>
+            <div class="footer__item"><img src="https://images4.alphacoders.com/689/689496.jpg" alt=""></div>
+        </div>
+       <div class="box__text">
+           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic assumenda in neque sapiente qui omnis quod, consequuntur sint cupiditate cumque earum odio libero iusto! Delectus esse quos voluptatem sit, harum odit eveniet odio, quae excepturi veniam accusantium deleniti, sapiente totam dolores saepe labore quis iure inventore. Harum quae eos earum.</p>
+       </div>
+   </footer>
+   <div class="wrapper__weathers">
+       <h3>Погода в городе</h3>
+        <input id="city" type="text">
+        <input id="cityBtn" type="button" value="узнать погоду">
+        <div class="weather">
+            <p class="data">data</p>
+            <strong class="weather__name">name</strong>
+            <p class="weather__temp">15</p>&deg
+            <br> ветер:<p class="speed"></p>
+        </div>
+   </div>
+   
+   <script type="module" src="/newProect/constructor.js"></script>
+</body>
+</html>

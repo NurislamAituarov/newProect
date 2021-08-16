@@ -1,0 +1,398 @@
+main{
+    background-image: url('https://catherineasquithgallery.com/uploads/posts/2021-02/1612907587_13-p-devushka-cherno-krasnii-fon-16.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 50px;
+}
+
+section{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.sidebar{
+    width: 200px;
+    height: 200px;
+    /* border: 1px solid black; */
+    position: absolute;
+    right: 10px;
+    top: 150px;
+}
+#formTwo{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding-top: 30px;
+}
+h2{
+    color: rgb(255, 255, 255);
+}
+#formTwo input{
+    width: 150px;
+    margin-bottom: 20px;
+    background-color: rgb(39, 34, 34);
+    border: hidden;
+}
+.btn{
+    width: 50px;
+}
+.box{
+    /* border: 1px solid black; */
+    max-width: 450px;
+    height: max-content;
+    margin-top: 300px;
+    margin-left: 100px;
+}
+
+/* foto ////////////////////////////////////////////////////////////*/
+.wrapper{
+    background-image: url('https://kartinkin.com/uploads/posts/2021-01/1610206992_18-p-barkhatnii-krasnii-fon-22.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.foto__item{
+    padding-left: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-right: 3%;
+    max-width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap:5px;
+    grid-row-gap: 40px;
+}
+.item{
+    max-width: 350px;
+    height: 250px;
+    border-radius: 15px;
+    transition-property: transform;
+    transition-duration: 2s;
+}
+.imgMy{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+/* //////////media ////////////////////////////////*/
+@media (max-width:600px) {
+    .foto__item{
+        padding: 2px;
+    }
+    .sidebar{
+        left: 40%;
+        top: 2%;
+    }
+    .box{
+        margin: 0;
+    }
+    .sidebar{
+        width: max-content;
+    }
+    main{
+        padding: 10px;
+    }
+    #formTwo input{
+        width: 80px;
+        height: 15px;
+        margin: 3px;
+        font-size: 10px;
+    }
+    .item{
+        height: 110px;
+    }
+}
+
+/*/////////////////////// square//////////////////////////// */
+.square{
+    position: absolute;
+    top: 150px;
+    left: 140px;
+    width: 100px;
+    height: 100px;
+    perspective: 1000px;
+}
+.square__box{
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    position: relative;
+    animation: square__box 10s linear infinite;
+}
+.sqBox{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    border: 1px solid black;
+    backface-visibility: hidden;
+}
+@keyframes square__box{
+    0%{
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    100%{
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+
+.top{
+    transform: rotateX(90deg) translateZ(50px);
+}
+.left{
+    transform: rotateY(-90deg) translateZ(50px);
+}
+.right{
+    transform: rotateY(90deg) translateZ(50px);
+}
+.bottom{
+    transform: rotateX(-90deg) translateZ(50px);
+}
+.front{
+    transform: translateZ(50px);
+}
+.back{
+    transform: rotateY(180deg) translateZ(50px);
+}
+
+#square{
+    width: 100%;
+    height: 100%;
+}
+@media (max-width:500px) {
+    .square{
+        width: 50px;
+        height: 50px;
+    }
+    .top{
+        transform: rotateX(90deg) translateZ(25px);
+    }
+    .left{
+        transform: rotateY(-90deg) translateZ(25px);
+    }
+    .right{
+        transform: rotateY(90deg) translateZ(25px);
+    }
+    .bottom{
+        transform: rotateX(-90deg) translateZ(25px);
+    }
+    .front{
+        transform: translateZ(25px);
+    }
+    .back{
+        transform: rotateY(180deg) translateZ(25px);
+    }
+}
+
+/* /////////////////////////////////////////////////time/////////////////// */
+
+.section__time{
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1000px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px;
+    grid-column-gap: 50px;
+}
+.item__time{
+    text-align: center;
+    padding: 10px;
+}
+.item__time h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.item__time span{
+    font-size: 10px;
+    line-height: 0;
+}
+.time4{
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    border-radius: 20px;
+}
+.copy{
+    padding: 0 50px;
+    background-color: rgb(20, 15, 15);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.copy__one{
+    justify-content: space-around;
+    background-color: seagreen;
+    font-size: 25px;
+}
+.copy__two{
+    background-color: rgb(70, 63, 63);
+}
+.copy__three{
+    background-color: rgb(70, 63, 63);
+}
+.copy span{
+    font-size: 20px;
+}
+/* //////////////sidebar__item/////////////////// */
+
+.sidebar__new{
+    max-width: 1000px;
+    height: auto;
+    padding: 50px;
+    background-color: rgb(78, 60, 60);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.new__s{
+    max-width: 450px;
+    height: 200px;
+    padding: 20px;
+    text-align: start;
+    position: relative;
+    box-shadow: -5px -5px 5px 2px;
+}    
+.new__s p{
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}   
+.new__s em{
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: rgb(231, 227, 227);
+}  
+#x{
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+strong{
+    font-size: 25px;
+}
+@media (max-width:500px) {
+    .section__time{
+        grid-column-gap: 5px;
+    }
+    .section__time img{
+        max-width: 70px;
+        height: auto;
+    }
+    .copy{
+        padding: 10px;
+        max-width: 320px;
+    }
+    .new__s{
+        max-width: 200px;
+        height: auto;
+        padding: 5px;
+    }
+    .new__s p{
+        margin: 0;
+    }
+    .new__s p em{
+        font-size: 15px;
+    }
+}
+/* //////////////////////////////////////////////////////////////// */
+footer{
+    max-width: 100%;
+    height: auto;
+    background-image: url('https://wallpaperset.com/w/full/8/8/f/241974.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    align-items: center;
+}
+.box__footer{
+    width: 500px;
+    height: 300px;
+    box-shadow: -5px -5px 5px 1px rgb(136, 14, 14);
+}
+.footer__item{
+    max-width: 100%;
+    height: 100%;
+    display: none;
+}
+.footer__item img{
+    width: 100%;
+    height: 100%;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 4s;
+}
+@keyframes fade{
+    from{opacity: .1;}to{opacity: .7;}
+}
+
+.showFooter{
+    display: block;
+}
+.box__text{
+    width: 30%;
+    height: auto;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 30px;
+    color: rgb(170, 165, 146);
+    text-decoration:underline;
+}
+
+@media (max-width:750px) {
+    .box__footer{
+        width: 100%;
+        height: auto;
+    }
+    footer{
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+    .box__text{
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+
+.wrapper__weathers{
+    max-width: 450px;
+    height: auto;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    border: 2px solid black;
+    text-align: center;
+}
+.weather{
+    max-width: 100%;
+    height: auto;
+    padding: 20px;
+    background-image: url('https://catherineasquithgallery.com/uploads/posts/2021-02/1613686251_59-p-fon-dlya-prezentatsii-pogoda-62.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.wrapper__weathers h3{
+    font-size: 25px;
+    color: rgb(250, 249, 249);
+}
+.weather p{
+    font-size: 25px;
+}
+#cityBtn{
+    color: black;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 10px;
+}
