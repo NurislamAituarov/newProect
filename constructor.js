@@ -1,5 +1,5 @@
 'use strict'
-import user from "./two.js";
+// import user from "./two.js";
 
 // console.log(user)
 // console.log(user.car)
@@ -248,3 +248,15 @@ if(localStorage.getItem('kostanai')){
     const weather = new Weather(...r)
     weather.showWeather()
 }
+
+
+
+
+function mars(n){
+    return function arry(num){
+        return n*num
+    }
+}
+const p = mars(2)
+console.log(p)
+console.log(p(5))
